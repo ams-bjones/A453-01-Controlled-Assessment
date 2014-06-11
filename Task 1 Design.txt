@@ -9,3 +9,6 @@ Currencys required: GBP (£) Euro (€) USD ($) and JPY (¥)
 
 Tests
 ====
+
+Import currency's
+import index's 
