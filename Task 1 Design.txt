@@ -7,5 +7,5 @@ c) Figure shown should be to two decimal places.
 
 Currencys required: GBP (£) Euro (€) USD ($) and JPY (¥)
 
-''''
+####
 Test
