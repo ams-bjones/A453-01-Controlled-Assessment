@@ -18,6 +18,7 @@ GBP - EUR = GBP * EUR
 GBP - USD = GBP * USD
 GBP - JPY = GBP * JPY
 
-EUR - GBP = EUR 
-EUR - USD = EUR
-EUR - JPY = EUR
+EUR - GBP = EUR * EUR
+EUR - USD = EUR * USD
+EUR - JPY = EUR * JPY
+
