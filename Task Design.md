@@ -22,3 +22,24 @@ EUR - GBP = EUR * EUR
 EUR - USD = EUR * USD
 EUR - JPY = EUR * JPY
 
+Pseudocode
+==========
+
+Variable = Currencys
+Import Rates (Variablename)
+
+print Ask user what currency they are converting from
+
+If choice is Pounds
+  convert to dollar/ euro/ yen (user choice)
+If choice is Dollar
+  convert to Pounds/ euro/ yen (user choice)
+If choice is Euro
+  convert to Pounds/ dollar/ yen (user choice)
+If choice is Yen
+  convert to Pounds/ dollar/ euro (user choice)
+
+print conversion
+  else print error
+
+
