@@ -2,8 +2,11 @@ Creating a Currency Converter. (Task 1)
 ====
 
 That...
+
 a) Has exchange rates that can be regularly changed by the user.
+
 b) User should be able to enter an amount, select chosen currency, and the currency to convert it into.
+
 c) Figure shown should be to two decimal places.
 
 Currencys required: GBP (£) Euro (€) USD ($) and JPY (¥)
@@ -14,17 +17,21 @@ Tests
 Import symbols        (GBP, EUR, USD, JPY)
 import exchange rates   (1, 1.2, 1.6, 200)
 
-GBP - EUR = GBP * EUR
-GBP - USD = GBP * USD
-GBP - JPY = GBP * JPY
+GBP -> EUR = 1/GBP * EUR
 
-EUR - GBP = EUR * EUR
-EUR - USD = EUR * USD
-EUR - JPY = EUR * JPY
+GBP -> USD = 1/GBP * USD
+
+GBP -> JPY = 1/GBP * JPY
+
+EUR -> GBP = 1/EUR * EUR
+
+EUR -> USD = 1/EUR * USD
+
+EUR -> JPY = 1/EUR * JPY
 
 Pseudocode
 ==========
-
+```
 Variable = Currencys
 Import Rates (Variablename)
 
@@ -41,9 +48,10 @@ If choice is Yen
 
 print conversion
   else print error
-  
+```
 Attempt 1
 ====
+```python
 currencies = ["GBP","USD", "EUR", "JPY"]
 #This states the available currency's.
 Pounds = 'Pounds'
@@ -95,9 +103,10 @@ print ("{0:.2f})".format(answer))
 
 
 converting = input("Please enter the sum you wish to convert in the currency you chose: ")
-
+```
 Attempt 2 (Successful)
 ====
+```python
 ###Reference: http://stackoverflow.com/questions/20398017/showing-decimal-places-python-2-7-and-decimal-datatype###
 #setup the decimal data type (including number of decimal places)
 import decimal
@@ -135,4 +144,4 @@ elif (currencyConvert == 4):
 #displays the end result to the user
 print 'The result of the Currency Conversion was ',  currencyAmount
 print ("Thank you for using the Currency Converter!")
-
+```
