@@ -69,4 +69,8 @@ def evaluate_choice(choice):
     else:
         print "\nThat is not a valid choice, please restart the programme and try again."
     
+<<<<<<< HEAD
 evaluate_choice(choice)
+=======
+evaluate_choice(choice)
+>>>>>>> ab17cb8bbf4b06ee8e177ef9594f83c21edeab13
