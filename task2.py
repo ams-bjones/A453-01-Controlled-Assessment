@@ -7,6 +7,7 @@
 #     "VickersH": ["Harriet", "45 Sage Gardens", "Brighton", "BN3 2FG", "01675 662554", "04/04/1968", "harriet.vickers@btinternet.com"]
 #     }
 
+#Loads up the address file found in the file named 'addressbook.csv'
 addresses = []
 def getAddrs():
     with open('addressbook.csv')as book:
@@ -14,10 +15,10 @@ def getAddrs():
         for line in data.split('\r\n'):
             address= line.split(',')
             addresses.append(address)
-            
+#Calls the function 'getAddrs'
 getAddrs()
 
-
+#Welcomes you to the Address Book
 print("Welcome to the Address Book!")
 answer = raw_input("Are you creating an entry? (Press 1) \nOr, are you searching an entry? (Press 2) ")
 
@@ -50,14 +51,15 @@ if answer == "1" :
 elif answer == '2':
     choice = raw_input("You have selected to search for an entry. Would you like to search by surnames [Press 1] \n Or by month of birth [Press 2]")
     
-
+#if the user selects '1', the system asks what surname they are searching for
 def evaluate_choice(choice):
     if choice == "1":
         surname_search = raw_input("\nWhat Surname do you wish to search for?: ")
         for address in addresses:
             if surname_search == address[0]:
                 print address
-    
+#The above code deciphers the people from the list in the address book who have the surname selected
+#If the user selects '2', the system asks what birthday month they are searching for
     elif choice == "2":
         month_search = raw_input("\nWhat Birthday month do you wish to search for? (Please enter in 2-digit format e.g Feb = 02): ")
         for address in addresses:
@@ -65,12 +67,8 @@ def evaluate_choice(choice):
                 dd,mm,yy = address[6].split('/')
                 if month_search == mm:
                     print address
+#The above code deciphers the people from the list in the address book of who is in the month selected
 
     else:
         print "\nThat is not a valid choice, please restart the programme and try again."
-    
-<<<<<<< HEAD
-evaluate_choice(choice)
-=======
-evaluate_choice(choice)
->>>>>>> ab17cb8bbf4b06ee8e177ef9594f83c21edeab13
+#If the user says anything other than '1' or '2', then the system prints that it isnt a valid choice and asks for the user to reselect their option by rerunning the programme.
