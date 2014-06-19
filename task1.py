@@ -13,7 +13,6 @@ currencyType = int(raw_input('please enter the type (1 = pound, 2 = euro, 3 = do
 
 #set the exchange rates (based on the GBP)
 euro = decimal.Decimal('1.2')
-<<<<<<< HEAD
 #Sets the variable "euro" to 1.2 times the GBP rate. This figure can be easily changed by the user without having to change anything else.
 dollar = decimal.Decimal('1.6')
 #Sets the variable "dollar" to 1.6 times the GBP rate. This figure can be easily changed by the user without having to change anything else.
