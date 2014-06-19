@@ -1,3 +1,34 @@
+def getCD(ISBN):
+    '''
+    This is the main function that takes in a 10 digit ISBN number as a string, and outputs a ISBN number with a check digit
+    '''
+
+    Di1=int(ISBN[0])*11
+    Di2=int(ISBN[1])*10
+    Di3=int(ISBN[2])*9
+    Di4=int(ISBN[3])*8
+    Di5=int(ISBN[4])*7
+    Di6=int(ISBN[5])*6
+    Di7=int(ISBN[6])*5
+    Di8=int(ISBN[7])*4
+    Di9=int(ISBN[8])*3
+    Di10=int(ISBN[9])*2
+
+    #The sum of digits 1-10
+    sum=(Di1+Di2+Di3+Di4+Di5+Di6+Di7+Di8+Di9+Di10) 
+
+    #the variable 'num' is set to the remainder of the variable 'num'
+    num=sum%11
+    #Digit 11 is set to 11 subtracted by the variable 'num'
+    Di11=11-num 
+    #If digit 11 is equal to 10, set the variable 'di11' to 'x'
+    if Di11==10: 
+        Di11='X'
+    #The ISBN is equal to the string ISBN + the string of Di11
+    ISBNNumber=str(ISBN)+str(Di11)
+    #Prints the ISBN number from the formula in line 53
+    return (ISBNNumber)
+
 #Reference: http://stackoverflow.com/questions/21814563/need-python-help-for-isbn-calculator
 
 #Creates a large string (seen by the the triple '"', means you can have several lines of text in one string
@@ -26,30 +57,6 @@ while len(ISBN)!= 10:
     continue
 
 #If the input of the ISBN is equal to a length of 10, multiply the first number in the variable ISBN by 11. Etc.
-else: 
 
-    Di1=int(ISBN[0])*11
-    Di2=int(ISBN[1])*10
-    Di3=int(ISBN[2])*9
-    Di4=int(ISBN[3])*8
-    Di5=int(ISBN[4])*7
-    Di6=int(ISBN[5])*6
-    Di7=int(ISBN[6])*5
-    Di8=int(ISBN[7])*4
-    Di9=int(ISBN[8])*3
-    Di10=int(ISBN[9])*2
-
-#The sum of digits 1-10
-sum=(Di1+Di2+Di3+Di4+Di5+Di6+Di7+Di8+Di9+Di10) 
-
-#the variable 'num' is set to the remainder of the variable 'num'
-num=sum%11
-#Digit 11 is set to 11 subtracted by the variable 'num'
-Di11=11-num 
-#If digit 11 is equal to 10, set the variable 'di11' to 'x'
-if Di11==10: 
-    Di11='X'
-#The ISBN is equal to the string ISBN + the string of Di11
-ISBNNumber=str(ISBN)+str(Di11)
-#Prints the ISBN number from the formula in line 53
-print('The ISBN number is -->    ' + ISBNNumber) 
+    
+print('The ISBN number is -->    ' + getCD(ISBN)) 
