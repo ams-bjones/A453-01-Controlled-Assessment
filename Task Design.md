@@ -251,7 +251,7 @@ def evaluate_choice(choice):
     else:
         print "\nThat is not a valid choice, please restart the programme and try again."
 #If the user says anything other than '1' or '2', then the system prints that it isnt a valid choice and asks for the user to reselect their option by rerunning the programme.
-```python
+```
 
 Finding ISBN's of books (Task 3)
 ====
@@ -263,6 +263,7 @@ B) only accept a number of the correct length
 
 Pseudocode
 ====
+```
 Take the 10 digit book number
 Mult by 10-2, down one by each number
 take answer
@@ -330,4 +331,4 @@ if Di11==10:
 ISBNNumber=str(ISBN)+str(Di11)
 #Prints the ISBN number from the formula in line 53
 print('The ISBN number is -->    ' + ISBNNumber) 
-```python
+```
