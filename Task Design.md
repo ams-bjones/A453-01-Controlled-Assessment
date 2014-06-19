@@ -264,7 +264,7 @@ B) only accept a number of the correct length
 
 Pseudocode
 ====
-```
+
 Take the 10 digit book number
 Mult by 10-2, down one by each number
 take answer
