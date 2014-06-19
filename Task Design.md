@@ -276,7 +276,7 @@ print answer
 
 Succesful Attempt
 ====
-```
+```python
 #Reference: http://stackoverflow.com/questions/21814563/need-python-help-for-isbn-calculator
 
 #Creates a large string (seen by the the triple '"', means you can have several lines of text in one string
@@ -332,4 +332,4 @@ if Di11==10:
 ISBNNumber=str(ISBN)+str(Di11)
 #Prints the ISBN number from the formula in line 53
 print('The ISBN number is -->    ' + ISBNNumber) 
-```
+```python
