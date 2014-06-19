@@ -150,9 +150,9 @@ print 'The result of the Conversion was: ',  currencyAmount
 #Thanks the user for using the Currency Converter
 print ("Thank you for using the Currency Converter!")
 ```
-Task 2
+
+Creating an Address Book (Task 2)
 ====
-Creating an Address Book
 #What I need to include:
 a) A surname and first name
 b) Two lines of the address and a post code
@@ -160,13 +160,18 @@ c) Telephone number
 d) Date of Birth
 e) E-Mail address
 Create a programme to search a data file by:
+--------------------------------------------
 a) A surname to retrieve and show details if correct
 b) By date of birth to retrieve and all contacts with a birthday in that month
 
 Pseudocode
 ====
-Load address book
+Load preset address book
 create function to add details
+create function to search for details in a preset file
+searchable by surname
+searchable by month of birth
+
 
 Successful Attempt #1 
 ====
